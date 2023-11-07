@@ -23,7 +23,7 @@ const Projects = (props: Props) => {
           {header}
         </h3>
       </div>
-      <div className="w-full grid grid-cols-2 gap-6">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
         {jobs.map((job) => (
           <a key={job.company} href={job.linkTo} target="_blank">
             <Card className="shadow-none bg-gray-900 border-gray-800 text-white h-full flex flex-col justify-between">

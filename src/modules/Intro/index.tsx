@@ -13,15 +13,15 @@ const Intro = (props: Props) => {
   return (
     <div
       id="about"
-      className="pt-40 flex gap-x-10 justify-center items-end text-white"
+      className="pt-32 lg:pt-40 flex flex-col lg:flex-row gap-x-10 justify-center items-end text-white"
     >
       <div className="flex-1">
         <h1 className="">{header}</h1>
         <p className="">{description}</p>
-        <div className="space-x-2 space-y-2 mt-4">
+        <div className="mt-4">
           {roles.map((role) => (
             <Button
-              className="cursor-default"
+              className="cursor-default mr-2 mb-2"
               size="sm"
               key={role.title}
               variant="secondary"
@@ -40,7 +40,7 @@ const Intro = (props: Props) => {
         </div>
       </div>
       <div className="flex-1">
-        <div className="mt-4 relative bg-gray-100 h-40 w-full flex items-end justify-end ml-auto profile-bg rounded-md">
+        <div className="lg:mt-4 mt-20 relative bg-gray-100 h-40 w-full flex items-end justify-end ml-auto profile-bg rounded-md">
           <Image
             src="/russ.png"
             width={350}
