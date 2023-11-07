@@ -23,10 +23,12 @@ const Projects = (props: Props) => {
           {header}
         </h3>
       </div>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {jobs.map((job) => (
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
+        {jobs.map((job, idx) => (
           <a key={job.company} href={job.linkTo} target="_blank">
-            <Card className="shadow-none bg-gray-900 border-gray-800 text-white h-full flex flex-col justify-between">
+            <Card
+              className={`hover:bg-purple-950 animate transition-all duration-200 hover:scale-[1.02] shadow-none bg-gray-900 border-gray-800 text-white h-full flex flex-col justify-between`}
+            >
               <CardHeader>
                 <CardTitle>{job.role}</CardTitle>
                 <CardDescription className="text-gray-300">{`@${job.company}`}</CardDescription>
@@ -38,7 +40,7 @@ const Projects = (props: Props) => {
                 {job.skills.map((skill) => (
                   <Button
                     key={skill}
-                    className="rounded-full cursor-default mr-2 mb-2"
+                    className="rounded-full mr-2 mb-2"
                     size="sm"
                     variant="outline"
                   >

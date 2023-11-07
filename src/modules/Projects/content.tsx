@@ -2,7 +2,7 @@ const content = {
   header: "A few projects I've worked on",
   jobs: [
     {
-      role: "Head of Product, Co-Founder",
+      role: "CPO, Co-Founder",
       company: "FluxForm",
       description:
         "FluxForms is a no-code form builder with analytics tools such as sentiment analysis, charts, dashboard to help businesses do more with the data they collect.",
@@ -18,7 +18,7 @@ const content = {
       linkTo: "https://www.linkedin.com/company/parentheses-labs",
     },
     {
-      role: "Head of Engineering, Co-Founder",
+      role: "CTO, Co-Founder",
       company: "Blip Chat",
       description:
         "Blip is an AI chatbot build on top of OpenAI's GPT 4 model. Users train the chatbot to answer questions about their business and Blip will answer questions from customers.",
@@ -39,7 +39,7 @@ const content = {
       description:
         "Taloflow is a collaborative and interactive notebook that helps product teams run faster vendor evaluations with data curated by the top experts in the world.",
 
-      skills: ["NextJS", "Remote", "Live Collaboration App"],
+      skills: ["NextJS", "Live Collaboration App", "Remote"],
       linkTo: "https://www.taloflow.ai",
     },
     {
@@ -51,7 +51,7 @@ const content = {
       linkTo: "https://www.thena.ai",
     },
     {
-      role: "Lead Engineer & Product Design Lead",
+      role: "Solutions Architect & Engineering Lead",
       company: "Conwaste",
       description:
         "Designed & Developed a NYC 311 like application for the city of San Juan, Puerto Rick. The application allows citizens to report issues to the city and track the progress of the issue.",
@@ -73,14 +73,6 @@ const content = {
         "Developed an application that helped lawyers with an E2E solutions for VC funding. The application helped lawyers with the legal documents and helped them manage their clients.",
       skills: ["NextJS", "TypeScript Migration", "Serverless"],
       linkTo: "https://quantlegaltech.com",
-    },
-    {
-      role: "Frontend Engineer",
-      company: "Canid",
-      description:
-        "Developed a Covid Vaccine finder and scheduler for kids in New York during the peak of the pandemic. The application helped parents find the nearest vaccine center for their kids.",
-      skills: ["React", "NextJS", "TypeScript", "Serverless"],
-      linkTo: "https://www.canid.io",
     },
   ],
 };
