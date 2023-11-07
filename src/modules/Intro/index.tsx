@@ -1,15 +1,15 @@
 import React from "react";
-import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import content from "./content";
 import Image from "next/image";
+import { MapPin } from "lucide-react";
 
 interface Props {
   children?: JSX.Element;
 }
 
 const Intro = (props: Props) => {
-  const { header, description, location, roles } = content;
+  const { header, description, roles, socials } = content;
   return (
     <div
       id="about"
@@ -18,7 +18,7 @@ const Intro = (props: Props) => {
       <div className="flex-1">
         <h1 className="">{header}</h1>
         <p className="">{description}</p>
-        <div className="space-x-2 space-y-2">
+        <div className="space-x-2 space-y-2 mt-4">
           {roles.map((role) => (
             <Button
               className="cursor-default"
@@ -31,16 +31,15 @@ const Intro = (props: Props) => {
             </Button>
           ))}
         </div>
-        <div className="mt-10 flex space-x-6 ">
-          <Github className="h-6 w-6 cursor-pointer" />
-          <Linkedin className="h-6 w-6 cursor-pointer" />
-          <Mail className="h-6 w-6 cursor-pointer" />
-          <Twitter className="h-6 w-6 cursor-pointer" />
-          <Instagram className="h-6 w-6 cursor-pointer" />
+        <div className="mt-10 flex space-x-6">
+          {socials.map((social) => (
+            <a href={social.linkTo} key={social.linkTo} target="_blank">
+              {social.icon}
+            </a>
+          ))}
         </div>
       </div>
       <div className="flex-1">
-        <code className="bg-purple-800">{location}</code>
         <div className="mt-4 relative bg-gray-100 h-40 w-full flex items-end justify-end ml-auto profile-bg rounded-md">
           <Image
             src="/russ.png"

@@ -16,12 +16,13 @@ const Header = (props: Props) => {
       <div className="rounded-full px-6 py-2 backdrop-blur-md bg-purple-500 bg-opacity-20">
         {headerItems.map((item) => (
           <Button
-            className="text-purple-300"
+            className="text-purple-300 group hover:text-purple-400"
             onClick={() => {
               router.push(`#${item.title.toLowerCase()}`);
             }}
             variant="link"
           >
+            {item.icon}
             {item.title}
           </Button>
         ))}
