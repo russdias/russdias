@@ -13,7 +13,7 @@ const Intro = (props: Props) => {
   return (
     <div
       id="about"
-      className="pt-40 flex gap-x-10 justify-center items-center text-white"
+      className="pt-40 flex gap-x-10 justify-center items-end text-white"
     >
       <div className="flex-1">
         <h1 className="">{header}</h1>
@@ -32,16 +32,16 @@ const Intro = (props: Props) => {
           ))}
         </div>
         <div className="mt-10 flex space-x-6 ">
-          <Github className="h-6 w-6" />
-          <Linkedin className="h-6 w-6" />
-          <Mail className="h-6 w-6" />
-          <Twitter className="h-6 w-6" />
-          <Instagram className="h-6 w-6" />
+          <Github className="h-6 w-6 cursor-pointer" />
+          <Linkedin className="h-6 w-6 cursor-pointer" />
+          <Mail className="h-6 w-6 cursor-pointer" />
+          <Twitter className="h-6 w-6 cursor-pointer" />
+          <Instagram className="h-6 w-6 cursor-pointer" />
         </div>
       </div>
       <div className="flex-1">
         <code className="bg-purple-800">{location}</code>
-        <div className="relative bg-gray-100 h-32 w-full my-4 flex items-end justify-end ml-auto profile-bg rounded-md">
+        <div className="mt-4 relative bg-gray-100 h-40 w-full flex items-end justify-end ml-auto profile-bg rounded-md">
           <Image
             src="/russ.png"
             width={350}

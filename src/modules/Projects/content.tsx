@@ -1,85 +1,86 @@
-import { AppWindow, Code, Rocket } from "lucide-react";
-
 const content = {
-  header: "Projects",
+  header: "A few projects I've worked on",
   jobs: [
     {
-      role: "Frontend Developer",
-      time: "2021-2022",
+      role: "Head of Product, Co-Founder",
+      company: "FluxForm",
       description:
-        "Developed a responsive web application using React and Redux. Worked closely with the design team to ensure pixel-perfect implementation of the UI.",
-      points: [
-        "Implemented a custom theme using styled-components.",
-        "Optimized the application for performance and accessibility.",
-        "Integrated the application with a third-party API to fetch data.",
-      ],
-      company: "XYZ Corp.",
-      skills: ["React", "Redux", "JavaScript", "HTML", "CSS"],
+        "FluxForms is a no-code form builder with analytics tools such as sentiment analysis, charts, dashboard to help businesses do more with the data they collect.",
+      skills: ["Serverless", "NextJS", "Product Research", "People Management"],
+      linkTo: "https://fluxforms.xyz",
     },
     {
-      role: "Backend Developer",
-      time: "2020-2021",
+      role: "CEO, Co-Founder",
+      company: "Parentheses Labs, Inc.",
       description:
-        "Developed a RESTful API using Node and Express. Designed and implemented the database schema using MongoDB.",
-      points: [
-        "Implemented user authentication and authorization using PassportJS.",
-        "Implemented pagination and filtering for large datasets.",
-        "Optimized the API for performance and scalability.",
-      ],
-      company: "ABC Inc.",
-      skills: ["Node", "Express", "MongoDB", "JavaScript"],
+        "Parentheses Labs was founded with the idea to provide access to high-quality engineering and product talent to help build great ideas into scalable applications.",
+      skills: ["Sales", "People Management", "Solutions Architecture"],
+      linkTo: "https://www.linkedin.com/company/parentheses-labs",
     },
     {
-      role: "Mobile Developer",
-      time: "2019-2020",
+      role: "Head of Engineering, Co-Founder",
+      company: "Blip Chat",
       description:
-        "Developed a cross-platform mobile application using React Native. Integrated the application with a third-party API to fetch data.",
-      points: [
-        "Implemented push notifications using Firebase Cloud Messaging.",
-        "Optimized the application for performance and battery life.",
-        "Implemented a custom theme using styled-components.",
-      ],
-      company: "123 Corp.",
-      skills: ["React Native", "JavaScript", "TypeScript", "Firebase"],
+        "Blip is an AI chatbot build on top of OpenAI's GPT 4 model. Users train the chatbot to answer questions about their business and Blip will answer questions from customers.",
+      skills: ["OpenAI", "Serverless", "NextJS", "Artificial Intelligence"],
+      linkTo: "https://www.linkedin.com/company/parentheses-labs",
     },
     {
-      role: "Full Stack Developer",
-      time: "2018-2019",
+      role: "Cloud Architecture Consultant",
+      company: "Cyberrwanda",
       description:
-        "Developed a full-stack web application using Angular, Node, and MongoDB. Deployed the application on AWS using Docker and Kubernetes.",
-      points: [
-        "Implemented user authentication and authorization using OAuth2.",
-        "Implemented real-time updates using WebSockets.",
-        "Optimized the application for performance and scalability.",
-      ],
-      company: "456 Inc.",
-      skills: ["Angular", "Node", "MongoDB", "AWS", "Docker", "Kubernetes"],
+        "CyberRwanda is a fun, interactive digital platform that equips Rwandan youth aged 12-19 years with sexual and reproductive health knowledge, job skills, and streamlined access to quality products and services to support healthy and safe relationships.",
+      skills: ["Serverless", "React Native", "Cloud Migration", "AWS"],
+      linkTo: "https://www.cyberrwanda.org",
     },
     {
-      role: "Full Stack Developer",
-      time: "2018-2019",
+      role: "Engineering Consultant",
+      company: "Taloflow (YCombinator)",
       description:
-        "Developed a full-stack web application using Angular, Node, and MongoDB. Deployed the application on AWS using Docker and Kubernetes.",
-      points: [
-        "Implemented user authentication and authorization using OAuth2.",
-        "Implemented real-time updates using WebSockets.",
-        "Optimized the application for performance and scalability.",
-      ],
-      company: "456 Inc.",
-      skills: ["Angular", "Node", "MongoDB", "AWS", "Docker", "Kubernetes"],
+        "Taloflow is a collaborative and interactive notebook that helps product teams run faster vendor evaluations with data curated by the top experts in the world.",
+
+      skills: ["NextJS", "Remote", "Live Collaboration App"],
+      linkTo: "https://www.taloflow.ai",
     },
     {
-      role: "Full Stack Developer",
-      time: "2018-2019",
+      role: "Engineering Consultant",
+      company: "Thena",
       description:
-        "Developed a full-stack web application using Angular, Node, and MongoDB. Deployed the application on AWS using Docker and Kubernetes.",
-      points: [
-        "Implemented user authentication and authorization using OAuth2.",
-        "Implemented real-time updates using WebSockets.",
-        "Optimized the application for performance and scalability.",
-      ],
-      company: "456 Inc.",
-      skills: ["Angular", "Node", "MongoDB", "AWS", "Docker", "Kubernetes"],
+        "Thena is a customer engagement platform for Slack. Our platform keeps track of shared Slack channels with customers; organizes customer channels with request identification, connects to internal tools, allows customer escalations, notifies teams, and analyzes behavior.",
+      skills: ["NextJS", "Serverless", "Slack Integration", "AWS"],
+      linkTo: "https://www.thena.ai",
+    },
+    {
+      role: "Lead Engineer & Product Design Lead",
+      company: "Conwaste",
+      description:
+        "Designed & Developed a NYC 311 like application for the city of San Juan, Puerto Rick. The application allows citizens to report issues to the city and track the progress of the issue.",
+      skills: ["Firebase", "Serverless", "NextJS", "React Native"],
+      linkTo: "https://www.conwastepr.com/en",
+    },
+    {
+      role: "Solutions Architect Team Lead",
+      company: "Archimydes",
+      description:
+        "Archimydes is a remote dev shop that builds products for startups and enterprises. I led a team of engineers and designers to build products for our clients.",
+      skills: ["React", "React Native", "NodeJS", "Firebase", "AWS"],
+      linkTo: "https://archimydes.dev",
+    },
+    {
+      role: "Senior Software Engineer",
+      company: "QuantLegal Tech",
+      description:
+        "Developed an application that helped lawyers with an E2E solutions for VC funding. The application helped lawyers with the legal documents and helped them manage their clients.",
+      skills: ["NextJS", "TypeScript Migration", "Serverless"],
+      linkTo: "https://quantlegaltech.com",
+    },
+    {
+      role: "Frontend Engineer",
+      company: "Canid",
+      description:
+        "Developed a Covid Vaccine finder and scheduler for kids in New York during the peak of the pandemic. The application helped parents find the nearest vaccine center for their kids.",
+      skills: ["React", "NextJS", "TypeScript", "Serverless"],
+      linkTo: "https://www.canid.io",
     },
   ],
 };

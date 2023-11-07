@@ -16,7 +16,7 @@ const Contact = (props: Props) => {
         </h2>
         <h2 className="text-white font-normal">
           <span>{descriptionOne}</span>
-          <a href={`mailto:${email}`} className="underline">
+          <a href={`mailto:${email}`} className="underline text-purple-700">
             {email}
           </a>
           <span>{descriptionTwo}</span>
