@@ -8,7 +8,7 @@ interface Props {
 const Footer = (props: Props) => {
   const { header } = content;
   return (
-    <footer className="lg:py-20 flex justify-center items-center text-center text-white">
+    <footer className="lg:py-20 pb-10 flex justify-center items-center text-center text-white">
       {header}
     </footer>
   );
