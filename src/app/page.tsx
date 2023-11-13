@@ -1,7 +1,7 @@
-import Experience from "@/modules/Experience";
-import Intro from "@/modules/Intro";
-import Footer from "@/modules/Footer";
-import Contact from "@/modules/Contact";
+import Experience from '@/modules/Experience';
+import Intro from '@/modules/Intro';
+import Footer from '@/modules/Footer';
+import Contact from '@/modules/Contact';
 
 export default function Home() {
   return (

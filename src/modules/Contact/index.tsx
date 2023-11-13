@@ -1,5 +1,5 @@
-import React from "react";
-import content from "./content";
+import React from 'react';
+import content from './content';
 
 interface Props {
   children?: JSX.Element;

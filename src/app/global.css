@@ -74,7 +74,9 @@
     background-image: radial-gradient(white 0.5px, transparent 0.5px),
       radial-gradient(white 0.7px, black 0.7px);
     background-size: 64px 64px;
-    background-position: 0 0, 32px 32px;
+    background-position:
+      0 0,
+      32px 32px;
   }
   h1 {
     @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;

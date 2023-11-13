@@ -1,13 +1,13 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
+import React from 'react';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import content from "./content";
+} from '@/components/ui/card';
+import content from './content';
 
 interface Props {
   children?: JSX.Element;

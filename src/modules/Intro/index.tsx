@@ -1,8 +1,8 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import content from "./content";
-import Image from "next/image";
-import { MapPin } from "lucide-react";
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import content from './content';
+import Image from 'next/image';
+import { MapPin } from 'lucide-react';
 
 interface Props {
   children?: JSX.Element;

@@ -1,8 +1,8 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import React from "react";
-import { headerItems } from "@/modules/Header/content";
-import { useRouter } from "next/navigation";
+'use client';
+import { Button } from '@/components/ui/button';
+import React from 'react';
+import { headerItems } from '@/modules/Header/content';
+import { useRouter } from 'next/navigation';
 
 interface Props {
   children?: JSX.Element;
