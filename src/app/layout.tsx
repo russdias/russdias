@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Russell Dias",
-  description: "Russell's Portfolio",
+  description:
+    "Dive into Russell Dias's dynamic tech adventure, from co-founding cutting-edge startups to leading transformative cloud and AI projects.",
 };
 
 export default function RootLayout({

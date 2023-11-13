@@ -3,7 +3,7 @@ import { AppWindow, Code, Github, Linkedin, Rocket } from "lucide-react";
 const content = {
   header: "Russell Dias",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nemo laboriosam corporis cupiditate, commodi modi ipsum soluta mollitia ut unde harum omnis?",
+    "An entrepreneur, software engineer, and product owner with a passion for building products that solve real-world problems.",
   roles: [
     {
       title: "Tech Founder",

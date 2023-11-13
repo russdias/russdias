@@ -6,7 +6,7 @@ export const headerItems = [
     icon: <Smile className="w-4 h-4 mr-2" />,
   },
   {
-    title: "Projects",
+    title: "Experience",
     icon: <DraftingCompass className="w-4 h-4 mr-2" />,
   },
   {

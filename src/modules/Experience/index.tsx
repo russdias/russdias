@@ -8,18 +8,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import content from "./content";
-import Link from "next/link";
 
 interface Props {
   children?: JSX.Element;
 }
 
-const Projects = (props: Props) => {
+const Experience = (props: Props) => {
   const { header, jobs } = content;
   return (
     <div>
       <div>
-        <h3 id="projects" className="mb-4 text-white">
+        <h3 id="experience" className="mb-4 text-white">
           {header}
         </h3>
       </div>
@@ -32,9 +31,18 @@ const Projects = (props: Props) => {
               <CardHeader>
                 <CardTitle>{job.role}</CardTitle>
                 <CardDescription className="text-gray-300">{`@${job.company}`}</CardDescription>
-                <CardDescription className="text-gray-400">
-                  {job.description}
-                </CardDescription>
+                {job.description && (
+                  <CardDescription className="text-gray-400">
+                    {job.description}
+                  </CardDescription>
+                )}
+                {job.points && (
+                  <ul>
+                    {job.points.map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
+                )}
               </CardHeader>
               <CardFooter className="flex flex-wrap">
                 {job.skills.map((skill) => (
@@ -56,4 +64,4 @@ const Projects = (props: Props) => {
   );
 };
 
-export default Projects;
+export default Experience;

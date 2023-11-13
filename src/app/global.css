@@ -95,7 +95,7 @@
     @apply leading-7 [&:not(:first-child)]:mt-4;
   }
   ul {
-    @apply my-4 ml-6 list-disc [&>li]:mt-2 text-sm text-muted-foreground;
+    @apply my-4 ml-4 list-disc [&>li]:mt-2 text-sm text-gray-400;
   }
   small {
     @apply text-sm  leading-none;
