@@ -3,7 +3,7 @@ import { AppWindow, Code, Github, Linkedin, Rocket } from 'lucide-react';
 const content = {
   header: 'Russell Dias',
   description:
-    'An entrepreneur, software engineer, and product owner with a passion for building products that solve real-world problems.',
+    'Senior product and engineering professional with 6+ years of experience. Currently, I’m a full-stack engineering lead at YLabs, heading serverless efforts and optimizing cloud infrastructure costs. I’m also a serial tech founder with three scalable startups, including Fluxforms (an AI-based forms analytics tool), Parentheses Labs (a software consultancy), and Blip Chat (an AI-powered virtual assistant).',
   roles: [
     {
       title: 'Tech Founder',
