@@ -18,7 +18,7 @@ const Header = (props: Props) => {
           <Button
             className="text-purple-300 group hover:text-purple-400"
             onClick={() => {
-              router.push(`#${item.title.toLowerCase()}`);
+              router.push(item.linkTo);
             }}
             variant="link"
           >

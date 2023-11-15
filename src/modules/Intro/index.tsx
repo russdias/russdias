@@ -11,10 +11,7 @@ interface Props {
 const Intro = (props: Props) => {
   const { header, description, roles, socials } = content;
   return (
-    <div
-      id="about"
-      className="pt-32 lg:pt-40 flex flex-col lg:flex-row gap-x-10 justify-center items-end text-white"
-    >
+    <div className="pt-32 lg:pt-40 flex flex-col lg:flex-row gap-x-10 justify-center items-end text-white">
       <div className="flex-1">
         <h1 className="">{header}</h1>
         <p className="">{description}</p>
