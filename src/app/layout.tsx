@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './global.css';
 import Header from '@/modules/Header';
 import clsx from 'clsx';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           'flex justify-center flex-col items-center max-w-6xl mx-auto')
         }
       >
+        <GoogleAnalytics />
         <Header />
         {children}
       </body>
