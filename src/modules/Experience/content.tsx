@@ -2,7 +2,7 @@ const content = {
   header: "A few companies I've worked with",
   jobs: [
     {
-      role: 'Head of Product, Co-Founder',
+      role: 'Co-Founder, Sr. Full Stack Engineering Lead',
       company: 'Fluxforms',
       description: 'AI-based forms analytics tool',
       points: [
@@ -16,7 +16,7 @@ const content = {
       linkTo: 'https://fluxforms.xyz',
     },
     {
-      role: 'Head of Engineering, Co-Founder',
+      role: 'Co-Founder, AWS Cloud Lead',
       company: 'Parentheses Labs, Inc.',
       description: 'Software consultancy',
       points: [
@@ -29,7 +29,7 @@ const content = {
       linkTo: 'https://www.linkedin.com/company/parentheses-labs',
     },
     {
-      role: 'Head of Engineering, Co-Founder',
+      role: 'Co-Founder, Sr. Full Stack Engineering Lead',
       company: 'Blip Chat',
       description: 'AI-Powered virtual assistant for customer support',
       points: [
@@ -41,7 +41,7 @@ const content = {
       linkTo: 'https://www.linkedin.com/company/parentheses-labs',
     },
     {
-      role: 'Full-Stack Engineering Lead',
+      role: 'Senior Full Stack Engineering Lead & AWS Cloud Lead',
       company: 'Cyberrwanda',
       description: 'A digital platform for sex education',
       points: [
