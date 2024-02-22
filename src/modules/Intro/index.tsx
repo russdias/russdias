@@ -4,7 +4,7 @@ import content from './content';
 import Image from 'next/image';
 
 interface Props {
-  children?: JSX.Element;
+  children?: React.ReactNode;
 }
 
 const Intro = (props: Props) => {
@@ -17,7 +17,7 @@ const Intro = (props: Props) => {
         <div className="mt-4">
           {roles.map((role) => (
             <Button
-              className="cursor-default mr-2 mb-2"
+              className="cursor-default mr-2 mb-2 h-6 rounded-md px-2 text-xs"
               size="sm"
               key={role.title}
               variant="secondary"

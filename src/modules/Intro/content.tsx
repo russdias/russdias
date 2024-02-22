@@ -1,21 +1,66 @@
-import { AppWindow, Cloud, Code, Github, Linkedin, Rocket } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
+import {
+  TbBrandReactNative,
+  TbBrandTypescript,
+  TbBrandNodejs,
+  TbBrandGraphql,
+  TbBrandReact,
+  TbBrandPython,
+  TbBrandGolang,
+  TbBrandAws,
+  TbBrandDocker,
+  TbSql,
+  TbBrandJavascript,
+} from 'react-icons/tb';
 
 const content = {
   header: 'Russell Dias',
   description:
-    'Senior engineering professional with 6+ years of experience. Currently, I’m a full-stack engineering lead at YLabs (US), heading AWS serverless efforts and optimizing cloud infrastructure costs. I’m also a serial tech founder with three startups, including Fluxforms (AI-based forms analytics tool), Parentheses Labs (a software consultancy), and Blip Chat (AI-powered virtual assistant).',
+    'An experienced and passionate software engineer with a track record of consistently delivering high impact solutions that drive business growth and improve user experience at fast-paced startups.',
   roles: [
     {
-      title: 'Tech Founder',
-      icon: <Rocket className="mr-2 h-4 w-4" />,
+      title: 'React.js',
+      icon: <TbBrandReact className="mr-2 h-4 w-4" />,
     },
     {
-      title: 'Sr. Full Stack Engineer',
-      icon: <Code className="mr-2 h-4 w-4" />,
+      title: 'JavaScript',
+      icon: <TbBrandJavascript className="mr-2 h-4 w-4" />,
     },
     {
-      title: 'AWS Solutions Architect',
-      icon: <Cloud className="mr-2 h-4 w-4" />,
+      title: 'TypeScript',
+      icon: <TbBrandTypescript className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: 'Node.js',
+      icon: <TbBrandNodejs className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: 'GraphQL',
+      icon: <TbBrandGraphql className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: 'React Native',
+      icon: <TbBrandReactNative className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: 'Python',
+      icon: <TbBrandPython className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: 'Golang',
+      icon: <TbBrandGolang className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: 'AWS',
+      icon: <TbBrandAws className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: 'Docker',
+      icon: <TbBrandDocker className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: 'SQL',
+      icon: <TbSql className="mr-2 h-4 w-4" />,
     },
   ],
   socials: [

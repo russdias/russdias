@@ -11,9 +11,4 @@ export const headerItems = [
     linkTo: '#contact',
     icon: <Contact className="w-4 h-4 mr-2" />,
   },
-  {
-    title: 'Resume',
-    linkTo: '/resume.pdf',
-    icon: <Paperclip className="w-4 h-4 mr-2" />,
-  },
 ];
