@@ -1,15 +1,20 @@
-import Experience from '@/modules/Experience';
+import React from 'react';
 import Intro from '@/modules/Intro';
-import Footer from '@/modules/Footer';
+import Work from '@/modules/Work';
 import Contact from '@/modules/Contact';
+import Footer from '@/modules/Footer';
 
-export default function Home() {
+interface Props {}
+
+const Home: React.FC<Props> = () => {
   return (
-    <main className="flex flex-col space-y-20 px-10 lg:px-0 w-full">
+    <main>
       <Intro />
-      <Experience />
+      <Work />
       <Contact />
       <Footer />
     </main>
   );
-}
+};
+
+export default Home;

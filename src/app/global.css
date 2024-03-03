@@ -70,14 +70,6 @@
   * {
     @apply border-border;
   }
-  body {
-    background-image: radial-gradient(white 0.5px, transparent 0.5px),
-      radial-gradient(white 0.7px, black 0.7px);
-    background-size: 64px 64px;
-    background-position:
-      0 0,
-      32px 32px;
-  }
   h1 {
     @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
   }
@@ -94,7 +86,7 @@
     @apply relative rounded bg-gray-700 px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
   }
   p {
-    @apply leading-7 [&:not(:first-child)]:mt-4;
+    @apply leading-7;
   }
   ul {
     @apply my-4 ml-4 list-disc [&>li]:mt-2 text-sm text-gray-400;
@@ -102,35 +94,7 @@
   small {
     @apply text-sm  leading-none;
   }
-  .profile-bg {
-    background-color: #000000;
-    background-size: 10px 10px;
-    background-image: repeating-linear-gradient(
-      45deg,
-      #545454 0,
-      #545454 1px,
-      #000000 0,
-      #000000 50%
-    );
-  }
 }
 
 @layer utilities {
-  @variants responsive {
-    .masonry {
-      column-gap: 1.5em;
-      column-count: 1;
-    }
-    .masonry-sm {
-      column-gap: 1.5em;
-      column-count: 2;
-    }
-    .masonry-md {
-      column-gap: 1.5em;
-      column-count: 3;
-    }
-    .break-inside {
-      break-inside: avoid;
-    }
-  }
 }

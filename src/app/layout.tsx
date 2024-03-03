@@ -1,33 +1,33 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Mulish } from 'next/font/google';
 import './global.css';
-import Header from '@/modules/Header';
 import clsx from 'clsx';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import Header from '@/modules/Header';
+import { ReactNode } from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
+const mulish = Mulish({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900', '1000'],
+});
 
 export const metadata: Metadata = {
   title: 'Russell Dias',
   description:
-    "Dive into Russell Dias's dynamic tech adventure, from co-founding cutting-edge startups to leading transformative cloud and AI projects.",
+    'An experienced and passionate software engineer with a track record of consistently delivering high impact solutions that drive business growth and improve user experience at fast-paced startups.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={
-          (clsx(inter.className),
-          'flex justify-center flex-col items-center max-w-6xl mx-auto')
-        }
+        className={clsx(
+          mulish.className,
+          'flex justify-center flex-col items-center mx-auto bg-gradient-to-r from-purple-100 to-blue-200 mb-10',
+        )}
       >
-        <GoogleAnalytics />
         <Header />
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
