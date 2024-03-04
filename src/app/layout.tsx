@@ -14,7 +14,7 @@ const mulish = Mulish({
 export const metadata: Metadata = {
   title: 'Russell Dias',
   description:
-    'An experienced and passionate software engineer with a track record of consistently delivering high impact solutions that drive business growth and improve user experience at fast-paced startups.',
+    'An experienced and passionate frontend engineer with a track record of consistently delivering high impact solutions that drive business growth and improve user experience at fast-paced startups.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

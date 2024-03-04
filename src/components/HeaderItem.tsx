@@ -18,7 +18,7 @@ const HeaderItem: React.FC<Props> = ({ title, link, icon }: Props) => {
   return (
     <div
       onClick={handleClick}
-      className="flex justify-center items-center space-x-2 hover:bg-purple-400 rounded-full px-4 py-2 transition-all duration-500 cursor-pointer"
+      className="flex justify-center items-center space-x-2 hover:bg-purple-200 rounded-full px-4 py-2 transition-all duration-500 cursor-pointer"
     >
       {icon}
       <b className="text-purple-900">{title}</b>
