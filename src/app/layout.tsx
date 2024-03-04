@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={clsx(
           mulish.className,
-          'flex justify-center flex-col items-center mx-auto bg-gradient-to-r from-purple-100 to-blue-200 mb-10',
+          'flex justify-center flex-col items-center bg-gradient-to-r from-purple-100 to-blue-200 mb-10',
         )}
       >
         <Header />

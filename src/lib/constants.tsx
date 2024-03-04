@@ -17,7 +17,7 @@ export const workItemsData = [
   {
     gradient: 'bg-gradient-to-b from-blue-300 to-blue-400',
     text: 'text-blue-900',
-    span: 'col-span-3',
+    span: 'col-span-1 lg:col-span-3',
     company: 'YLabs (Cyberrwanda)',
     linkTo: 'https://cyberrwanda.org/',
     skills: [
@@ -37,7 +37,7 @@ export const workItemsData = [
   {
     gradient: 'bg-gradient-to-b from-purple-300 to-purple-400',
     text: 'text-purple-900',
-    span: 'col-span-3',
+    span: 'col-span-1 lg:col-span-3',
     company: 'Thena',
     linkTo: 'https://thena.ai/',
     skills: ['React', 'NextJS', 'TypeScript', 'NodeJS', 'MongoDB'],
@@ -48,7 +48,7 @@ export const workItemsData = [
   {
     gradient: 'bg-gradient-to-b from-cyan-300 to-cyan-400',
     text: 'text-cyan-900',
-    span: 'col-span-2',
+    span: 'col-span-1 lg:col-span-2',
     company: 'Taloflow',
     linkTo: 'https://taloflow.ai/',
     skills: ['React', 'NextJS', 'MongoDB', 'GraphQL'],
@@ -59,7 +59,7 @@ export const workItemsData = [
   {
     gradient: 'bg-gradient-to-b from-red-300 to-red-400',
     text: 'text-red-900',
-    span: 'col-span-4',
+    span: 'col-span-1 lg:col-span-4',
     company: 'FluxForms',
     linkTo: 'https://fluxforms.xyz/',
     skills: ['React', 'Node', 'TypeScript', 'PostgreSQL', 'NextJS'],
@@ -70,7 +70,7 @@ export const workItemsData = [
   {
     gradient: 'bg-gradient-to-b from-blue-300 to-blue-400',
     text: 'text-blue-900',
-    span: 'col-span-3',
+    span: 'col-span-1 lg:col-span-3',
     company: 'Archimydes',
     linkTo: 'https://archimydes.dev/',
     skills: [
@@ -90,7 +90,7 @@ export const workItemsData = [
   {
     gradient: 'bg-gradient-to-b from-yellow-300 to-yellow-400',
     text: 'text-yellow-900',
-    span: 'col-span-3',
+    span: 'col-span-1 lg:col-span-3',
     company: 'Conwaste',
     linkTo:
       'https://play.google.com/store/apps/details?id=com.conwaste.app&hl=en&gl=US',

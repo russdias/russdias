@@ -13,7 +13,7 @@ const Work: React.FC<Props> = () => {
       <h2 className="text-6xl text-purple-900 mb-16 font-bold">
         <span>My Work</span>
       </h2>
-      <div className="mx-auto max-w-6xl w-full grid grid-cols-6 gap-8">
+      <div className="mx-auto p-10 lg:p-0 lg:max-w-6xl w-full grid grid-cols-1 lg:grid-cols-6 gap-8">
         {workItemsData.map((el, idx) => (
           <WorkItem
             skills={el.skills}
