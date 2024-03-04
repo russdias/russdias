@@ -12,7 +12,7 @@ const Intro: React.FC<Props> = () => {
       <h1 className="text-8xl text-purple-900 mb-6 font-extrabold lg:h-[200px]">
         <TypeAnimation
           sequence={[
-            "Hi, I'm Russ. \n A Fontend Engineer",
+            "Hi, I'm Russ. \n A Frontend Engineer",
             600,
             "Hi, I'm Russ. \n A Backend Engineer",
             600,
