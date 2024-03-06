@@ -1,4 +1,4 @@
-import { Briefcase, Mail } from 'lucide-react';
+import { Briefcase, Code, Mail } from 'lucide-react';
 import {
   TbBrandReactNative,
   TbBrandTypescript,
@@ -13,6 +13,84 @@ import {
   TbBrandJavascript,
 } from 'react-icons/tb';
 
+export const openSourceWorkItemsData = [
+  {
+    gradient: 'bg-gradient-to-b from-cyan-300 to-cyan-400',
+    text: 'text-cyan-900',
+    span: 'col-span-1 lg:col-span-4',
+    title: 'Beautiful Todos',
+    linkTo: 'https://github.com/russelldias98/beautiful-todos',
+    skills: ['React', 'NextJS', 'tRPC', 'NodeJS', 'TypeScript', 'PostgreSQL'],
+    description: 'A dead simple todo app that helps you get things done.',
+  },
+  {
+    gradient: 'bg-gradient-to-b from-red-300 to-red-400',
+    text: 'text-red-900',
+    span: 'col-span-1 lg:col-span-2',
+    title: 'Binary Search in TypeScript',
+    linkTo: 'https://github.com/russelldias98/binary-search-typescript',
+    skills: ['TypeScript', 'JavaScript', 'Algorithm'],
+    description: 'Binary search implementation in TypeScript.',
+  },
+  {
+    gradient: 'bg-gradient-to-b from-green-300 to-green-400',
+    text: 'text-green-900',
+    span: 'col-span-1 lg:col-span-2',
+    title: 'Array Chunk in TypeScript',
+    linkTo: 'https://github.com/russelldias98/array-chunk-typescript',
+    skills: ['TypeScript', 'JavaScript', 'Algorithm'],
+    description:
+      'A simple utility function to split an array into chunks of a specified size.',
+  },
+  {
+    gradient: 'bg-gradient-to-b from-orange-300 to-orange-400',
+    text: 'text-orange-900',
+    span: 'col-span-1 lg:col-span-4',
+    title: 'User Auth with GraphQL',
+    linkTo: 'https://github.com/russelldias98/User-Auth-GraphQL-Apollo',
+    skills: [
+      'Apollo',
+      'NodeJS',
+      'GraphQL',
+      'MongoDB',
+      'Redis',
+      'Docker',
+      'Ngnix',
+    ],
+    description:
+      'A simple user authentication system using GraphQL and Apollo.',
+  },
+  {
+    gradient: 'bg-gradient-to-b from-purple-300 to-purple-400',
+    text: 'text-purple-900',
+    span: 'col-span-1 lg:col-span-4',
+    title: 'Fastboot Tool',
+    linkTo: 'https://github.com/russelldias98/fastboot-tool',
+    skills: ['Linux', 'Shell', 'Bash', 'Android', 'Fastboot', 'ADB'],
+    description:
+      'Fastboot Tool Helps Linux Users to quickly flash recovery.img or boot.img through Fastboot onto their device',
+  },
+  {
+    gradient: 'bg-gradient-to-b from-blue-300 to-blue-400',
+    text: 'text-blue-900',
+    span: 'col-span-1 lg:col-span-2',
+    title: 'Flash My zImage',
+    linkTo: 'https://github.com/russelldias98/flash-my-zImage',
+    skills: ['Linux', 'Shell', 'Bash', 'Android', 'Fastboot', 'ADB'],
+    description:
+      'Flash My zImage helps users to easily make a flashable zip of their compiled zImage in 1 Script',
+  },
+  {
+    gradient: 'bg-gradient-to-b from-slate-300 to-slate-400',
+    text: 'text-slate-900',
+    span: 'col-span-1 lg:col-span-6',
+    title: 'Kernel Tool',
+    linkTo: 'https://github.com/russelldias98/Kernel-Tool',
+    skills: ['Linux', 'Shell', 'Bash', 'Android', 'Fastboot', 'ADB'],
+    description:
+      'Kernel Tool helps users to unpack, pack, make a flashable zip for the kernel(boot.img)',
+  },
+];
 export const workItemsData = [
   {
     gradient: 'bg-gradient-to-b from-blue-300 to-blue-400',
@@ -104,13 +182,18 @@ export const workItemsData = [
 export const headerItemData = [
   {
     title: 'Work',
-    link: '#work',
+    link: '/#work',
     icon: <Briefcase className="w-4 h-4 text-purple-900" />,
   },
   {
     title: 'Contact',
-    link: '#contact',
+    link: '/#contact',
     icon: <Mail className="w-4 h-4 text-purple-900" />,
+  },
+  {
+    title: 'Open Source',
+    link: '/open-source',
+    icon: <Code className="w-4 h-4 text-purple-900" />,
   },
 ];
 

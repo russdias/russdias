@@ -9,15 +9,9 @@ interface Props {}
 const Intro: React.FC<Props> = () => {
   return (
     <div className="p-10 lg:p-0 flex flex-col justify-center items-center text-center pt-32 pb-20 lg:mt-60 lg:mb-40">
-      <h1 className="text-8xl text-purple-900 mb-6 font-extrabold lg:h-[200px]">
+      <h1 className="text-8xl text-purple-900 mb-6 font-extrabold lg:h-[200px] w-full">
         <TypeAnimation
-          sequence={[
-            "Hi, I'm Russ. \n A Frontend Engineer",
-            600,
-            "Hi, I'm Russ. \n A Backend Engineer",
-            600,
-            "Hi, I'm Russ. \n A Full Stack Engineer",
-          ]}
+          sequence={["Hi, I'm Russ. \n A Full Stack Engineer"]}
           wrapper="span"
           cursor={true}
           style={{ whiteSpace: 'pre-line', display: 'block' }}
