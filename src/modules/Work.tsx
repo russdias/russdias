@@ -25,6 +25,8 @@ const Work: React.FC<Props> = () => {
             description={el.description}
             linkTo={el.linkTo}
             image={el.image}
+            currentJob={el.currentJob}
+            tagClassName={el.tagClassName}
           />
         ))}
       </div>

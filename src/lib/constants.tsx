@@ -93,6 +93,19 @@ export const openSourceWorkItemsData = [
 ];
 export const workItemsData = [
   {
+    gradient: 'bg-gradient-to-b from-green-300 to-green-400',
+    text: 'text-green-900',
+    span: 'col-span-1 lg:col-span-6',
+    company: 'Neon',
+    linkTo: 'https://neon.tech/',
+    skills: ['React', 'Golang', 'TypeScript', 'PostgreSQL'],
+    description:
+      'The fully managed serverless Postgres. We separate storage and compute to offer autoscaling, branching, and bottomless storage.',
+    image: '/mockups/neon.png',
+    currentJob: true,
+    tagClassName: 'bg-green-100',
+  },
+  {
     gradient: 'bg-gradient-to-b from-blue-300 to-blue-400',
     text: 'text-blue-900',
     span: 'col-span-1 lg:col-span-3',

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import Link from 'next/link';
+import Tag from './Tag';
 
 interface Props {
   className?: string;
@@ -13,6 +14,8 @@ interface Props {
   description: string;
   linkTo: string;
   image: string;
+  tagClassName?: string;
+  currentJob?: boolean;
 }
 
 const WorkItem: React.FC<Props> = ({
@@ -25,6 +28,8 @@ const WorkItem: React.FC<Props> = ({
   linkTo,
   image,
   description,
+  tagClassName,
+  currentJob,
 }) => {
   return (
     <Link
@@ -40,7 +45,10 @@ const WorkItem: React.FC<Props> = ({
       )}
     >
       <div className="p-10 transition-transform duration-300">
-        <h4 className="font-extrabold uppercase mb-2">{company}</h4>
+        <div className="flex items-center mb-2 space-x-2">
+          <h4 className="font-extrabold uppercase">{company}</h4>
+          {currentJob && <Tag text="Current Job" className={tagClassName} />}
+        </div>
         <p className="font-medium text-lg">{description}</p>
         <div className="flex flex-wrap mt-6 w-3/4">
           {skills.map((skill, index) => (
