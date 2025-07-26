@@ -248,6 +248,12 @@ make clean
 make build-prod
 ```
 
+### Architecture Compatibility Issues
+
+**Fixed**: All Docker builds now target `linux/amd64` architecture to ensure compatibility with DigitalOcean Kubernetes nodes. This prevents "exec format error" when deploying from Apple Silicon (M1/M2) Macs to x86_64 Kubernetes clusters.
+
+The Makefile now uses `docker buildx build --platform linux/amd64` for all production builds.
+
 ### View Logs
 
 ```bash

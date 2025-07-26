@@ -1,16 +1,16 @@
 import { Briefcase, Code, Mail } from 'lucide-react';
 import {
-  TbBrandReactNative,
-  TbBrandTypescript,
-  TbBrandNodejs,
-  TbBrandGraphql,
-  TbBrandReact,
-  TbBrandPython,
-  TbBrandGolang,
   TbBrandAws,
   TbBrandDocker,
-  TbSql,
+  TbBrandGolang,
+  TbBrandGraphql,
   TbBrandJavascript,
+  TbBrandNodejs,
+  TbBrandPython,
+  TbBrandReact,
+  TbBrandReactNative,
+  TbBrandTypescript,
+  TbSql,
 } from 'react-icons/tb';
 
 export const openSourceWorkItemsData = [
@@ -93,6 +93,19 @@ export const openSourceWorkItemsData = [
 ];
 export const workItemsData = [
   {
+    gradient: 'bg-gradient-to-b from-red-300 to-red-400',
+    text: 'text-red-900',
+    span: 'col-span-1 lg:col-span-6',
+    company: 'Databricks',
+    linkTo: 'https://databricks.com/',
+    skills: ['React', 'Golang', 'TypeScript', 'Apache Spark', 'Data Engineering'],
+    description:
+      'Working at the Lakebase team at Databricks, building next-generation data lakehouse solutions and platforms for unified analytics and AI.',
+    image: '/mockups/neon.png', // You may want to add a databricks mockup image later
+    currentJob: true,
+    tagClassName: 'bg-red-100',
+  },
+  {
     gradient: 'bg-gradient-to-b from-green-300 to-green-400',
     text: 'text-green-900',
     span: 'col-span-1 lg:col-span-6',
@@ -100,9 +113,9 @@ export const workItemsData = [
     linkTo: 'https://neon.tech/',
     skills: ['React', 'Golang', 'TypeScript', 'PostgreSQL'],
     description:
-      'The fully managed serverless Postgres. We separate storage and compute to offer autoscaling, branching, and bottomless storage.',
+      'Built the fully managed serverless Postgres platform with separated storage and compute for autoscaling, branching, and bottomless storage. Acquired by Databricks for $1 billion.',
     image: '/mockups/neon.png',
-    currentJob: true,
+    currentJob: false,
     tagClassName: 'bg-green-100',
   },
   {

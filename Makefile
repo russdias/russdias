@@ -33,6 +33,14 @@ dev-down: ## Stop development environment
 	@echo "$(YELLOW)Stopping development environment...$(NC)"
 	docker-compose down
 
+dev-local: ## Start local Next.js development server
+	@echo "$(YELLOW)Starting Next.js development server...$(NC)"
+	pnpm dev
+
+build-local: ## Build Next.js application locally
+	@echo "$(YELLOW)Building Next.js application...$(NC)"
+	pnpm build
+
 # Production local testing
 prod: ## Start production environment locally
 	@echo "$(YELLOW)Starting production environment locally...$(NC)"
@@ -43,16 +51,16 @@ prod-down: ## Stop production environment
 	docker-compose -f docker-compose.prod.yml down
 
 # Build commands
-build: ## Build development Docker image
-	@echo "$(YELLOW)Building development image...$(NC)"
-	docker build -t $(APP_NAME):dev --target development .
-	@echo "$(GREEN)Development image built successfully!$(NC)"
+build: ## Build development Docker image for AMD64 (Kubernetes compatible)
+	@echo "$(YELLOW)Building development image for linux/amd64...$(NC)"
+	docker buildx build --platform linux/amd64 -t $(APP_NAME):dev --target development . --load
+	@echo "$(GREEN)Development image built successfully for AMD64!$(NC)"
 
-build-prod: ## Build production Docker image
-	@echo "$(YELLOW)Building production image...$(NC)"
-	docker build -t $(APP_NAME):$(VERSION) --target runner .
-	docker build -t $(APP_NAME):latest --target runner .
-	@echo "$(GREEN)Production image built successfully!$(NC)"
+build-prod: ## Build production Docker image for AMD64 (Kubernetes compatible)
+	@echo "$(YELLOW)Building production image for linux/amd64...$(NC)"
+	docker buildx build --platform linux/amd64 -t $(APP_NAME):$(VERSION) --target runner . --load
+	docker buildx build --platform linux/amd64 -t $(APP_NAME):latest --target runner . --load
+	@echo "$(GREEN)Production image built successfully for AMD64!$(NC)"
 	@echo "$(BLUE)Image tagged as: $(APP_NAME):$(VERSION) and $(APP_NAME):latest$(NC)"
 
 # Registry commands
@@ -80,10 +88,10 @@ push-latest: tag ## Build, tag and push latest image to DigitalOcean registry
 	docker push $(FULL_IMAGE):latest
 	@echo "$(GREEN)Image $(FULL_IMAGE):latest pushed successfully!$(NC)"
 
-push-all: tag ## Build, tag and push both versioned and latest images
-	@echo "$(YELLOW)Pushing both versioned and latest images...$(NC)"
-	docker push $(FULL_IMAGE):$(VERSION)
-	docker push $(FULL_IMAGE):latest
+push-all: tag ## Build, tag and push both versioned and latest images for AMD64
+	@echo "$(YELLOW)Pushing both versioned and latest images for AMD64...$(NC)"
+	docker buildx build --platform linux/amd64 -t $(FULL_IMAGE):$(VERSION) --target runner . --push
+	docker buildx build --platform linux/amd64 -t $(FULL_IMAGE):latest --target runner . --push
 	@echo "$(GREEN)All images pushed successfully!$(NC)"
 	@echo "$(BLUE)Pushed: $(FULL_IMAGE):$(VERSION)$(NC)"
 	@echo "$(BLUE)Pushed: $(FULL_IMAGE):latest$(NC)"
@@ -128,13 +136,14 @@ info: ## Show build information
 	@echo "  Git Branch: $(shell git rev-parse --abbrev-ref HEAD)"
 
 # CI/CD helpers
-ci-build: ## Build for CI/CD (no cache)
-	@echo "$(YELLOW)Building for CI/CD...$(NC)"
-	docker build --no-cache -t $(APP_NAME):$(VERSION) --target runner .
-	docker tag $(APP_NAME):$(VERSION) $(FULL_IMAGE):$(VERSION)
+ci-build: ## Build for CI/CD (no cache, AMD64)
+	@echo "$(YELLOW)Building for CI/CD with linux/amd64...$(NC)"
+	docker buildx build --platform linux/amd64 --no-cache -t $(FULL_IMAGE):$(VERSION) --target runner . --load
 	@echo "$(GREEN)CI build completed!$(NC)"
 
-ci-push: ## Push from CI/CD
-	@echo "$(YELLOW)Pushing from CI/CD...$(NC)"
-	docker push $(FULL_IMAGE):$(VERSION)
-	@echo "$(GREEN)CI push completed!$(NC)" 
+ci-push: ## Push from CI/CD (AMD64)
+	@echo "$(YELLOW)Pushing from CI/CD with linux/amd64...$(NC)"
+	docker buildx build --platform linux/amd64 -t $(FULL_IMAGE):$(VERSION) --target runner . --push
+	@echo "$(GREEN)CI push completed!$(NC)"
+
+ 
